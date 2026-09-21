@@ -1,3 +1,5 @@
 import { rmSync } from "node:fs";
 
-rmSync(".astro", { recursive: true, force: true });
+for (const cachePath of [".astro", "node_modules/.astro"]) {
+	rmSync(cachePath, { recursive: true, force: true });
+}
