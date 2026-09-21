@@ -30,7 +30,6 @@ import {
 	BANNER_HEIGHT_NON_HOME_MIN,
 	PAGE_WIDTH,
 } from "@/constants/constants";
-import { defaultFavicons } from "@/constants/icon";
 import type { Favicon } from "@/types/config";
 import { isHomePage } from "@/utils/layout-utils";
 import { getAuthorAvatarUrl, getSiteLogo } from "@/utils/schema-image";
@@ -103,13 +102,14 @@ let pageTitle: string;
 if (title) {
 	pageTitle = `${title} - ${siteConfig.title}`;
 } else {
-	pageTitle = siteConfig.subtitle
-		? `${siteConfig.title} - ${siteConfig.subtitle}`
-		: siteConfig.title;
+	pageTitle =
+		siteConfig.homePageTitle ||
+		(siteConfig.subtitle
+			? `${siteConfig.title} - ${siteConfig.subtitle}`
+			: siteConfig.title);
 }
 
-const favicons: Favicon[] =
-	siteConfig.favicon.length > 0 ? siteConfig.favicon : defaultFavicons;
+const favicons: Favicon[] = siteConfig.favicon;
 // apple-touch-icon：优先取 favicon 中的 png，否则取第一个
 const appleTouchIcon =
 	favicons.find((f) => f.src.toLowerCase().endsWith(".png")) ?? favicons[0];

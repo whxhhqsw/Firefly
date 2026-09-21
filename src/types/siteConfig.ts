@@ -32,6 +32,7 @@ export type NavbarMode = "static" | "fixed" | "dynamic";
 export type SiteConfig = {
 	title: string;
 	subtitle: string;
+	homePageTitle?: string; // 首页浏览器标签标题，留空则使用 title/subtitle 自动拼接
 	site_url: string;
 	description?: string; // 网站描述，用于生成 <meta name="description">
 	keywords?: string[]; // 站点关键词，用于生成 <meta name="keywords">

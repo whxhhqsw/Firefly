@@ -47,6 +47,9 @@ export const siteConfig: SiteConfig = {
 	// 站点副标题
 	subtitle: "Demo site",
 
+	// 首页浏览器标签标题
+	homePageTitle: "whxhhqsw|home",
+
 	// 站点 URL
 	site_url: "https://firefly.cuteleaf.cn",
 
@@ -88,16 +91,7 @@ export const siteConfig: SiteConfig = {
 
 	// Favicon 配置
 	// 如果启用了OpenGraph图片功能，数组中需要包含png格式的favicon图标
-	favicon: [
-		{
-			// 图标文件路径
-			src: "/favicon/firefly-32.png",
-			// 可选，指定主题 'light' | 'dark'
-			// theme: "light",
-			// 可选，图标大小
-			// sizes: "32x32",
-		},
-	],
+	favicon: [],
 
 	// 导航栏配置
 	navbar: {
