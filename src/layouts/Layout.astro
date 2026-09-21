@@ -264,6 +264,13 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
         />
       ))
     }
+    {favicons.length === 0 && (
+      <link
+        rel="icon"
+        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjwvc3ZnPg=="
+        sizes="any"
+      />
+    )}
     {appleTouchIcon && (
       <link
         rel="apple-touch-icon"
