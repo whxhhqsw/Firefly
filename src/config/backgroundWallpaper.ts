@@ -110,21 +110,6 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 					url: "https://github.com/whxhhqsw",
 					showName: true,
 				},
-				{
-					name: "Email",
-					icon: "fa7-solid:envelope",
-					url: "mailto:whxhhqsw@msn.com",
-				},
-				{
-					name: "Sponsor",
-					icon: "material-symbols:favorite",
-					url: "https://blog.cuteleaf.cn/sponsor/",
-				},
-				{
-					name: "RSS",
-					icon: "fa7-solid:rss",
-					url: "/rss/",
-				},
 			],
 		},
 		// 壁纸轮播配置，横幅壁纸和全屏壁纸共享，仅在配置多张图片时生效
