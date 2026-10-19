@@ -1,6 +1,6 @@
 ---
 title: 第六周周报
-published: 2026-10-18
+published: 2026-10-17
 description: 记录第六周在 CTF 入门、工具安装与解题思路上的学习，以及第一次参加工业互联网 CTF 比赛的准备与反思。
 tags: [学习, 网络安全, 周报]
 category: 学习记录
